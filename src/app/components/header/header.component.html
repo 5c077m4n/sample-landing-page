@@ -1,3 +1,21 @@
-<p>
-  header works!
-</p>
+<img id="bg-img" [src]="bgImageSrc" alt="Header Background" />
+<div class="main-container" fxLayout="column" fxLayoutAlign="space-between center">
+	<mat-toolbar id="main-toolbar">
+		<img id="logo-img" src="assets/images/selected-logo.png" alt="SELECTED">
+		<span class="spacer"></span>
+		<a mat-button class="white" href="#home">Home</a>
+		<a mat-button class="white" href="#services">Services</a>
+		<a mat-button class="white" href="#our-team">Our Team</a>
+		<a mat-button class="white" href="#join-us">Join Us</a>
+		<a mat-button class="white green-bg rounded">SIGN UP</a>
+	</mat-toolbar>
+	<div id="title-container" fxLayout="column" fxLayoutAlign="center center">
+		<h1 id="main-title" class="green">THIS IS YOUR MISSION</h1>
+		<h2 id="secondary-title" class="white">
+			THIS PAGE NEEDS TO BE PERFECT FOR ALL BROWSERS & SCREENS!
+		</h2>
+	</div>
+	<button mat-button id="get-started-button" class="white green-bg rounded">
+		GET STARTED
+	</button>
+</div>

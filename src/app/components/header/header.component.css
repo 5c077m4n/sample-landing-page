@@ -1,0 +1,29 @@
+#bg-img {
+	position: fixed;
+	z-index: -1;
+	width: 100%;
+	height: auto;
+	filter: brightness(50%);
+}
+#main-toolbar {
+	width: 80%;
+	margin: 0 auto;
+}
+#get-started-button {
+	margin-top: 5%;
+	width: 15%;
+}
+#main-title {
+	padding-top: 20%;
+	font-size: 48px;
+	margin: 0;
+}
+#secondary-title {
+	font-weight: 500;
+	margin: 0;
+}
+
+.green-bg { background-color: #00b540; }
+.white { color: white; }
+.green { color: #00b540; }
+.rounded { border-radius: 10% / 60%; }

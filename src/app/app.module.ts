@@ -1,15 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppRoutingModule } from './app-routing.module';
 import { StylesModule } from './modules/styles/styles.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { TeamComponent } from './components/team/team.component';
 import { MainComponent } from './components/main/main.component';
+import { ServicesComponent } from './components/services/services.component';
+import { JoinUsComponent } from './components/join-us/join-us.component';
 
 
 @NgModule({
@@ -17,15 +19,17 @@ import { MainComponent } from './components/main/main.component';
 		AppComponent,
 		HeaderComponent,
 		FooterComponent,
-		ContactFormComponent,
 		TeamComponent,
-		MainComponent
+		MainComponent,
+		ServicesComponent,
+		JoinUsComponent
 	],
 	imports: [
 		BrowserModule,
 		AppRoutingModule,
 		StylesModule,
-		BrowserAnimationsModule
+		BrowserAnimationsModule,
+		FlexLayoutModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]
