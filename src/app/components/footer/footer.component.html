@@ -2,32 +2,72 @@
 	<mat-toolbar-row>
 		<img src="assets/images/logos/selected-logo-bottom.png" alt="Selected Bottom Logo"
 			crossorigin="anonymous" />
-		<a mat-button class="white" href="#home">Home</a>
-		<a mat-button class="white" href="#services">Services</a>
-		<a mat-button class="white" href="#our-team">Our Team</a>
-		<a mat-button class="white" href="#join-us">Join Us</a>
-		<a mat-button class="white green-bg rounded">SIGN UP</a>
-		<span class="spacer"></span>
-		<span><strong>Follow</strong> Us:</span>
-		<a mat-fab href="https://www.facebook.com" target="_blank">
-			<img src="assets/images/icons/fb-logo.png" alt="Facebook Logo"
-				crossorigin="anonymous" width="30px" />
-		</a>
-		<a mat-fab href="https://www.twitter.com" target="_blank">
-			<img src="assets/images/icons/t-logo.png" alt="Twitter Logo"
-				crossorigin="anonymous" width="30px" />
-		</a>
-		<a mat-fab href="https://www.youtube.com" target="_blank">
-			<img src="assets/images/icons/yt-logo.png" alt="Youtube Logo"
-				crossorigin="anonymous" width="30px" />
-		</a>
-		<a mat-fab href="https://www.linkedin.com" target="_blank">
-			<img src="assets/images/icons/ln-logo.png" alt="LinkedIn Logo"
-				crossorigin="anonymous" width="30px" />
-		</a>
+		<nav fxShow fxHide.lt-lg>
+			<a mat-button class="white" href="#home">Home</a>
+			<a mat-button class="white" href="#services">Services</a>
+			<a mat-button class="white" href="#our-team">Our Team</a>
+			<a mat-button class="white" href="#join-us">Join Us</a>
+			<a mat-button class="white green-bg rounded">SIGN UP</a>
+		</nav>
+		<span class="spacer" fxShow fxHide.lt-lg></span>
+		<div fxShow fxHide.lt-lg>
+			<span class="white"><strong>Follow</strong> Us:</span>
+			<a mat-fab href="https://www.facebook.com" target="_blank">
+				<img src="assets/images/icons/fb-logo.png" alt="Facebook Logo"
+					crossorigin="anonymous" width="20px" />
+			</a>
+			<a mat-fab href="https://www.twitter.com" target="_blank">
+				<img src="assets/images/icons/t-logo.png" alt="Twitter Logo"
+					crossorigin="anonymous" width="20px" />
+			</a>
+			<a mat-fab href="https://www.youtube.com" target="_blank">
+				<img src="assets/images/icons/yt-logo.png" alt="Youtube Logo"
+					crossorigin="anonymous" width="20px" />
+			</a>
+			<a mat-fab href="https://www.linkedin.com" target="_blank">
+				<img src="assets/images/icons/ln-logo.png" alt="LinkedIn Logo"
+					crossorigin="anonymous" width="20px" />
+			</a>
+		</div>
+	</mat-toolbar-row>
+	<mat-toolbar-row fxHide fxShow.lt-lg fxLayout="row wrap">
+		<button mat-button [matMenuTriggerFor]="navMenu"
+			fxHide fxShow.lt-lg class="white" fxFlex>
+			Navigation Menu
+		</button>
+		<mat-menu #navMenu="matMenu">
+			<nav>
+				<a mat-button href="#home" fxFill>Home</a>
+				<a mat-button href="#services" fxFill>Services</a>
+				<a mat-button href="#our-team" fxFill>Our Team</a>
+				<a mat-button href="#join-us" fxFill>Join Us</a>
+				<a mat-button class="green-bg" fxFill>SIGN UP</a>
+			</nav>
+		</mat-menu>
+		<button mat-button [matMenuTriggerFor]="followMenu"
+			fxHide fxShow.lt-lg class="white" fxFlex>
+			<strong>Follow</strong> Us:
+		</button>
+		<mat-menu #followMenu="matMenu">
+			<nav>
+				<a mat-button href="https://www.facebook.com" target="_blank" fxFill>
+					On Facebook
+				</a>
+				<a mat-button href="https://www.twitter.com" target="_blank" fxFill>
+					On Twitter
+				</a>
+				<a mat-button href="https://www.youtube.com" target="_blank" fxFill>
+					On Youtube
+				</a>
+				<a mat-button href="https://www.linkedin.com" target="_blank" fxFill>
+					On LinkedIn
+				</a>
+			</nav>
+		</mat-menu>
 	</mat-toolbar-row>
 	<mat-toolbar-row>
-		<img src="assets/images/copyrights.png" alt="Copyrights"
-			crossorigin="anonymous" width="30px" />
+		<p class="center lightgray small-text">
+			Copyright 2018 - All Rights Reserved - SELECTED
+		</p>
 	</mat-toolbar-row>
 </mat-toolbar>

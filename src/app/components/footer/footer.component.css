@@ -1,12 +1,11 @@
-a, a[mat-fab], span {
+a, span {
+	background-color: transparent;
+}
+a[mat-fab] {
 	background-color: transparent;
 	box-shadow: none;
-	color: white;
-	fill: white;
 }
 a[mat-fab] > img {
-	width: 5px;
-	height: 5px;
 	padding: 0;
     display: inline-block;
     background-repeat: no-repeat no-repeat;

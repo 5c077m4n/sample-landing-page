@@ -4,3 +4,13 @@ html, body { height: 100%; }
 body { margin: 0; font-family: 'Roboto', sans-serif; }
 
 .spacer { flex: 1 1 auto; }
+.green-bg { background-color: #00b540; }
+.white { color: white; fill: white; }
+.lightgray { color: lightgray; fill: lightgray; }
+.black { color: black; fill: black; }
+.green { color: #00b540; }
+.small-text { font-size: 12px; }
+.large-text { font-size: 48px; }
+.rounded { border-radius: 10% / 50%; }
+.padded { padding: 5px; }
+.centered { margin: 0 auto; }
