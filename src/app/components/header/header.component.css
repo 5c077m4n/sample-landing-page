@@ -6,8 +6,8 @@
 	filter: brightness(50%);
 }
 #main-toolbar {
+	background-color: transparent;
 	width: 80%;
-	margin: 0 auto;
 }
 #get-started-button {
 	margin-top: 5%;

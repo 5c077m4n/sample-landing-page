@@ -7,11 +7,11 @@ import { Component, OnInit } from '@angular/core';
 	styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-	public bgImageSrc = 'assets/images/header-bg-1.png';
+	public bgImageSrc = 'assets/images/backgrounds/header-bg-1.png';
 	constructor() {}
 	ngOnInit() {
 		window.setInterval(() => {
-			this.bgImageSrc = `assets/images/header-bg-${this.rndInteger(1, 2)}.png`;
+			this.bgImageSrc = `assets/images/backgrounds/header-bg-${this.rndInteger(1, 2)}.png`;
 		}, 5000);
 	}
 
