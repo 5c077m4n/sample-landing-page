@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -26,6 +28,8 @@ import { JoinUsComponent } from './components/join-us/join-us.component';
 	],
 	imports: [
 		BrowserModule,
+		HttpClientModule,
+		ReactiveFormsModule,
 		AppRoutingModule,
 		StylesModule,
 		BrowserAnimationsModule,

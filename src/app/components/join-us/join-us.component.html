@@ -1,3 +1,45 @@
-<p>
-  join-us works!
-</p>
+<div id="main-container" class="padded" fxLayout="column" fxLayoutAlign="center center">
+	<h2>Join Us</h2>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et urna in mi laoreet pretium et vel enim. Nullam ut metus nec sapien placerat euismod. In congue porttitor dolor, nec accumsan nisl porttitor nec. Nunc non auctor velit. Praesent non hendrerit tellus. Fusce posuere at lacus non vestibulum. Pellentesque finibus arcu at ex tristique porttitor. Donec interdum est dolor, a lacinia est porta quis. Curabitur laoreet tellus sem, ut sollicitudin nisi tincidunt et. Mauris ut massa dui. Etiam quis urna et turpis bibendum tempus tincidunt sit amet libero. Curabitur diam est, fermentum nec fringilla vitae, vehicula in nibh. Nunc non rhoncus lectus. Morbi congue tortor ut laoreet vulputate.
+	</p>
+	<div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center center" fxFill>
+		<div fxLayout="column" fxFlex="50%">
+			<address>Harokmin 26 Azrieli Center B Holon</address>
+			<span>Tel: +97237789999</span>
+			<span>Fax: +97237789990</span>
+			<span>Email: support@selected.co.il</span>
+		</div>
+		<form [formGroup]="mailForm" fxFlex="50%" fxLayout="column" (ngSubmit)="onSubmit();">
+			<mat-form-field>
+				<input matInput placeholder="Your Name" formControlName="name" />
+				<mat-error *ngIf="!mailForm.controls.name.valid">
+					This field is a <strong>must</strong>.
+				</mat-error>
+			</mat-form-field>
+			<mat-form-field>
+				<input matInput placeholder="Your Email" formControlName="from" />
+				<mat-error *ngIf="!mailForm.controls.from.valid">
+					Please enter a <strong>valid</strong> email address.
+				</mat-error>
+			</mat-form-field>
+			<mat-form-field>
+				<input matInput placeholder="Your Subject" formControlName="subject" />
+				<mat-error *ngIf="!mailForm.controls.subject.valid">
+					This field is a <strong>must</strong>.
+				</mat-error>
+			</mat-form-field>
+			<mat-form-field>
+				<textarea matInput placeholder="Your Message"
+					formControlName="content">
+				</textarea>
+				<mat-error *ngIf="!mailForm.controls.content.valid">
+					This field is a <strong>must</strong>.
+				</mat-error>
+			</mat-form-field>
+			<button mat-button type="submit" class="green-bg" [disabled]="!mailForm.valid">
+				Send Message
+			</button>
+		</form>
+	</div>
+</div>

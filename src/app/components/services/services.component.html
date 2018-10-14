@@ -1,7 +1,13 @@
-<div class="padded" id="services-container">
+<div class="padded" id="services-container" fxLayout="column"
+	fxLayoutGap="20px" fxLayoutAlign="space-between center">
 	<h2>Services</h2>
-	<mat-tab-group>
-		<mat-tab label="For Advertisers">
+	<mat-tab-group mat-stretch-tabs fxFill>
+		<mat-tab>
+			<ng-template mat-tab-label>
+				<img class="tab-label-img rounded" src="assets/images/service-tabs/team.png"
+					alt="Advertiser's tab image" />
+				For Advertisers
+			</ng-template>
 			<article fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center center">
 				<section fxFlex="50%">
 					<p>
@@ -19,9 +25,33 @@
 				</section>
 			</article>
 		</mat-tab>
-		<mat-tab label="For Publishers"></mat-tab>
-		<mat-tab label="Technology"></mat-tab>
-		<mat-tab label="Creative Team"></mat-tab>
-		<mat-tab label="Web Developers"></mat-tab>
+		<mat-tab label="For Publishers">
+			<ng-template mat-tab-label>
+				<img class="tab-label-img rounded" src="assets/images/service-tabs/team.png"
+					alt="Publishers's tab image" />
+				For Publishers
+			</ng-template>
+		</mat-tab>
+		<mat-tab>
+			<ng-template mat-tab-label>
+				<img class="tab-label-img rounded" src="assets/images/service-tabs/tech.png"
+					alt="Technology's tab image" />
+				Technology
+			</ng-template>
+		</mat-tab>
+		<mat-tab label="Creative Team">
+			<ng-template mat-tab-label>
+				<img class="tab-label-img rounded" src="assets/images/service-tabs/team.png"
+					alt="Creative team's tab image" />
+				Creative Team
+			</ng-template>
+		</mat-tab>
+		<mat-tab label="Web Developers">
+			<ng-template mat-tab-label>
+				<img class="tab-label-img rounded" src="assets/images/service-tabs/web-dev.png"
+					alt="Web developers's tab image" />
+				Web Developers
+			</ng-template>
+		</mat-tab>
 	</mat-tab-group>
 </div>

@@ -2,3 +2,7 @@
 	background: #f9f9f9 url('/assets/images/backgrounds/services-bg.png') repeat-x;
 	background-position: top;
 }
+
+.tab-label-img { border: 2px solid lightgreen; }
+
+h2 { margin-top: 10px; }

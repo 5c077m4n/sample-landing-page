@@ -14,3 +14,4 @@ body { margin: 0; font-family: 'Roboto', sans-serif; }
 .rounded { border-radius: 10% / 50%; }
 .padded { padding: 5px; }
 .centered { margin: 0 auto; }
+.rounded { border-radius: 50%; }
